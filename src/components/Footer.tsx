@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p className="text-muted-foreground text-sm font-mono">
           Designed & Built by{" "}
-          <span className="text-primary">Your Name</span>
+          <span className="text-primary">Xavier McKenzie</span>
         </p>
         <p className="text-muted-foreground/60 text-xs mt-2 font-mono">
           © {new Date().getFullYear()} All rights reserved.

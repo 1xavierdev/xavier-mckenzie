@@ -8,7 +8,7 @@ const HeroSection = () => {
           Hi, my name is
         </p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-up-delay-1">
-          Your Name.
+          Xavier McKenzie.
         </h1>
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6 animate-fade-up-delay-2">
           I build things for the web.
