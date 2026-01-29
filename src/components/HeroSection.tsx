@@ -14,9 +14,9 @@ const HeroSection = () => {
           I build things for the web.
         </h2>
         <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-10 animate-fade-up-delay-3">
-          I'm a computer science student passionate about building exceptional digital 
-          experiences. Currently focused on learning full-stack development and creating 
-          projects that make a difference.
+          I'm a junior Computer Science student at Central Connecticut State University 
+          with a Software Engineering concentration. Passionate about full-stack development 
+          and building software solutions that solve real problems.
         </p>
         <div className="flex gap-4 animate-fade-up-delay-4">
           <a

@@ -2,41 +2,41 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 
 const featuredProjects = [
   {
-    title: "Project One",
+    title: "Medicine Reminder System",
     description:
-      "A full-stack web application that helps users manage their tasks efficiently. Built with modern technologies and best practices in mind.",
-    tech: ["React", "Node.js", "PostgreSQL", "Tailwind"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A Java application that helps users manage medication schedules using Binary Search Trees for efficient storage and retrieval, and Queues for managing reminder notifications. Features include adding/removing medications, scheduling reminders, and tracking dosage history.",
+    tech: ["Java", "Binary Search Trees", "Queues", "OOP"],
+    github: "https://github.com/1xavierdev",
+    live: "",
   },
   {
-    title: "Project Two",
+    title: "Hotel Reservation System",
     description:
-      "An AI-powered application that analyzes data and provides insights. Features a clean dashboard with interactive visualizations.",
-    tech: ["Python", "TensorFlow", "React", "FastAPI"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A comprehensive hotel booking system built with object-oriented principles. Allows users to search available rooms, make reservations, manage bookings, and handle check-in/check-out processes with data persistence.",
+    tech: ["Java", "OOP", "File I/O", "Data Structures"],
+    github: "https://github.com/1xavierdev",
+    live: "",
   },
 ];
 
 const otherProjects = [
   {
-    title: "CLI Tool",
-    description: "A command-line tool that automates repetitive development tasks.",
-    tech: ["Python", "Click"],
-    github: "https://github.com",
+    title: "Personal Finance Tracker",
+    description: "An application to track income, expenses, and savings goals with budget analysis features.",
+    tech: ["Python", "File I/O"],
+    github: "https://github.com/1xavierdev",
   },
   {
-    title: "Portfolio Template",
-    description: "A clean and minimal portfolio template for developers.",
-    tech: ["React", "Tailwind"],
-    github: "https://github.com",
+    title: "Portfolio Website",
+    description: "This personal portfolio built with React and Tailwind CSS to showcase my projects and skills.",
+    tech: ["React", "TypeScript", "Tailwind"],
+    github: "https://github.com/1xavierdev/xavier-mckenzie",
   },
   {
-    title: "API Wrapper",
-    description: "A TypeScript wrapper for a popular third-party API.",
-    tech: ["TypeScript", "Axios"],
-    github: "https://github.com",
+    title: "Algorithm Implementations",
+    description: "Collection of classic algorithm implementations including sorting, searching, and graph algorithms.",
+    tech: ["Java", "Python", "Algorithms"],
+    github: "https://github.com/1xavierdev",
   },
 ];
 
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
               >
                 <div className="aspect-video bg-card border border-border rounded-lg overflow-hidden card-hover">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <span className="text-4xl">🚀</span>
+                    <span className="text-4xl">{index === 0 ? "💊" : "🏨"}</span>
                   </div>
                 </div>
               </div>
@@ -103,14 +103,16 @@ const ProjectsSection = () => {
                   >
                     <Github size={20} />
                   </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-primary transition-colors"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

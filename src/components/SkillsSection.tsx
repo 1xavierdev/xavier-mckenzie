@@ -1,8 +1,8 @@
 const skills = [
-  { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "Java", "C++"] },
-  { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "HTML/CSS"] },
-  { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "MongoDB"] },
-  { category: "Tools", items: ["Git", "Docker", "VS Code", "Linux", "Figma"] },
+  { category: "Languages", items: ["Java", "Python", "JavaScript", "TypeScript", "C"] },
+  { category: "Frontend", items: ["React", "HTML/CSS", "Tailwind CSS"] },
+  { category: "Backend", items: ["Node.js", "Express", "REST APIs"] },
+  { category: "Tools & Other", items: ["Git", "GitHub", "VS Code", "Linux", "Data Structures", "Algorithms"] },
 ];
 
 const SkillsSection = () => {

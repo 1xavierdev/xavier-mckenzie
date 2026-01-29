@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="text-xl font-semibold text-gradient">
-          {"<YourName />"}
+          {"<Xavier />"}
         </a>
 
         {/* Desktop Nav */}

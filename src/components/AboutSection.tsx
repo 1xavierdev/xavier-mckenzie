@@ -7,20 +7,22 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm a Computer Science student with a passion for creating 
-              digital solutions that blend functionality with great user experience. 
-              My journey in tech started when I first wrote my "Hello World" program, 
-              and I've been hooked ever since.
+              Hello! I'm Xavier, a junior Computer Science student at Central Connecticut 
+              State University with a Software Engineering concentration, expecting to 
+              graduate in Spring 2027. My journey in tech started with curiosity about 
+              how software works, and I've been building ever since.
             </p>
             <p>
-              Currently, I'm focused on expanding my skills in full-stack development, 
-              working with modern technologies and frameworks. I love tackling challenging 
-              problems and turning ideas into reality through code.
+              I'm currently focused on expanding my full-stack development skills, 
+              working with technologies like React, Node.js, Java, and Python. I enjoy 
+              tackling challenging problems and turning ideas into functional applications 
+              that make a real impact.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or working on personal projects 
-              that push my boundaries.
+              Outside of coding, I'm passionate about fitness and personal growth. 
+              I'm actively involved with ColorStack and the National Society of Black 
+              Engineers (NSBE), where I connect with other professionals and expand 
+              my network in the tech industry.
             </p>
           </div>
           

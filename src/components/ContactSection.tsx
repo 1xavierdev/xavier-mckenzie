@@ -1,10 +1,9 @@
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/1xavierdev", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/xavier-mckenzie", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:xaviermckenzie@example.com", label: "Email" },
 ];
 
 const ContactSection = () => {
@@ -14,13 +13,14 @@ const ContactSection = () => {
         <p className="text-primary font-mono text-sm mb-4">What's Next?</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
         <p className="text-muted-foreground text-lg mb-10">
-          I'm currently looking for new opportunities and my inbox is always open. 
-          Whether you have a question, want to collaborate on a project, or just 
-          want to say hi, I'll try my best to get back to you!
+          I'm currently seeking a Summer 2026 software engineering internship and always 
+          open to connecting with fellow developers and industry professionals. Whether 
+          you have an opportunity, want to collaborate on a project, or just want to say 
+          hi, feel free to reach out!
         </p>
         
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:xaviermckenzie@example.com"
           className="inline-block px-8 py-4 border border-primary text-primary rounded font-mono hover:bg-primary/10 transition-colors mb-12"
         >
           Say Hello
