@@ -1,15 +1,15 @@
 const skills = [
-  { category: "Languages", items: ["Java", "Python", "JavaScript", "TypeScript", "C"] },
-  { category: "Frontend", items: ["React", "HTML / CSS", "Tailwind CSS"] },
-  { category: "Backend", items: ["Node.js", "Express", "REST APIs"] },
-  { category: "Tools & CS Core", items: ["Git", "GitHub", "VS Code", "Linux", "Data Structures", "Algorithms"] },
+  { category: "Languages", items: ["Python", "Java", "JavaScript", "SQL", "C"] },
+  { category: "Cloud & AI", items: ["AWS Lambda", "S3", "Bedrock Agents", "EventBridge", "SNS", "IAM", "Terraform", "DevSecOps", "CI/CD", "REST APIs", "LLM Automation"] },
+  { category: "Frameworks", items: ["React", "Node.js", "HTML", "CSS"] },
+  { category: "Developer Tools", items: ["Git / GitHub", "MySQL", "Jira", "Agile / Scrum"] },
 ];
 
 const SkillsSection = () => {
   return (
     <section id="skills" className="py-24 px-6">
       <div className="container mx-auto max-w-5xl">
-        <p className="kicker mb-3">03 — Skills</p>
+        <p className="kicker mb-3">04 / Skills</p>
         <h2 className="section-title mb-10">Tools I work with</h2>
 
         <div className="grid sm:grid-cols-2 gap-6">

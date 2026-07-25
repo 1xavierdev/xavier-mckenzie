@@ -1,39 +1,40 @@
-import { Code2, Dumbbell, Users } from "lucide-react";
+import { Cloud, Users, GitBranch } from "lucide-react";
 
 const facts = [
-  { icon: Code2, label: "Focus", value: "Full-stack development" },
+  { icon: Cloud, label: "Focus", value: "Cloud, AI & DevSecOps" },
+  { icon: GitBranch, label: "Currently", value: "SWE Intern at CGI" },
   { icon: Users, label: "Communities", value: "ColorStack · NSBE" },
-  { icon: Dumbbell, label: "Outside code", value: "Fitness & personal growth" },
 ];
 
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-6">
       <div className="container mx-auto max-w-5xl">
-        <p className="kicker mb-3">01 — About</p>
+        <p className="kicker mb-3">01 / About</p>
         <h2 className="section-title mb-10">Who I am</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm Xavier — a Computer Science student at{" "}
+              I'm Xavier, a software engineer and Computer Science student at{" "}
               <span className="text-foreground font-medium">Central Connecticut State University</span>,
               concentrating in Software Engineering and graduating in{" "}
-              <span className="text-foreground font-medium">Spring 2027</span>. My path into tech
-              started with a simple question — <em>how does software actually work?</em> — and I've
-              been building ever since to find out.
+              <span className="text-foreground font-medium">December 2027</span>. I started my degree
+              at Manchester Community College, earned my associate's, and made the Dean's List along the way.
             </p>
             <p>
-              Today I spend most of my time growing as a full-stack developer, working with
-              React, Node.js, Java, and Python. I care about writing code that's readable and
-              reliable, and I like the part of the job where a vague idea slowly becomes a real,
-              working application.
+              These days I'm a{" "}
+              <span className="text-foreground font-medium">Software Engineering Intern at CGI</span>, where I
+              work across AWS building Bedrock agent automation, disaster-recovery pipelines, and DevSecOps
+              tooling in Python. I've shipped code that runs in production, traced tricky IAM and permission
+              bugs through CloudTrail, and presented cloud architecture to senior leadership.
             </p>
             <p>
-              Away from the keyboard, I'm into fitness and personal growth, and I stay active with{" "}
+              What I enjoy most is the moment a messy infrastructure problem becomes a clean, automated system
+              that just works. Outside of that, I stay active with{" "}
               <span className="text-foreground font-medium">ColorStack</span> and the{" "}
               <span className="text-foreground font-medium">National Society of Black Engineers (NSBE)</span>,
-              where I connect with other engineers and keep learning from the community.
+              and I'm always learning from that community.
             </p>
           </div>
 

@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
@@ -33,7 +34,7 @@ const Navbar = () => {
           <span className="hidden sm:inline">Xavier McKenzie</span>
         </a>
 
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden md:flex items-center gap-6">
           {navItems.map((item, i) => (
             <a key={item.name} href={item.href} className="nav-link">
               <span className="text-accent">{String(i + 1).padStart(2, "0")}.</span> {item.name}

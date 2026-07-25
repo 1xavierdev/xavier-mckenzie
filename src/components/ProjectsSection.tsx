@@ -2,20 +2,22 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
 const featuredProjects = [
   {
-    emoji: "💊",
-    title: "Medicine Reminder System",
+    emoji: "🛡️",
+    title: "S3 Public-Access Misconfiguration Detector",
+    status: "In Progress",
     description:
-      "A Java application that helps users manage medication schedules. It uses Binary Search Trees for efficient storage and lookup and Queues to manage reminder notifications — with add/remove, scheduling, and dosage-history tracking.",
-    tech: ["Java", "Binary Search Trees", "Queues", "OOP"],
+      "An automated scanner that detects public S3 bucket misconfigurations and fires real-time SNS alerts. It's designed with auto-remediation behind dry-run guardrails to prevent unintended production changes, and deploys through modular, reusable Terraform.",
+    tech: ["Python", "boto3", "AWS Lambda", "EventBridge", "SNS", "Terraform"],
     github: "https://github.com/1xavierdev",
     live: "",
   },
   {
-    emoji: "🏨",
-    title: "Hotel Reservation System",
+    emoji: "💊",
+    title: "Medicine Reminder System",
+    status: "Featured",
     description:
-      "A hotel booking system built on solid object-oriented principles. Users can search available rooms, make and manage reservations, and handle check-in / check-out, with data persisted between sessions.",
-    tech: ["Java", "OOP", "File I/O", "Data Structures"],
+      "A Java desktop app for managing medication schedules, with a Binary Search Tree, queue, and linked list all implemented from scratch. Built with test-driven development to keep the data structures correct and reliable.",
+    tech: ["Java", "Custom Data Structures", "TDD", "OOP"],
     github: "https://github.com/1xavierdev",
     live: "",
   },
@@ -23,33 +25,20 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    title: "Personal Finance Tracker",
-    description: "Tracks income, expenses, and savings goals with simple budget analysis.",
-    tech: ["Python", "File I/O"],
-    github: "https://github.com/1xavierdev",
-  },
-  {
-    title: "Portfolio Website",
-    description: "This site — hand-built with React, TypeScript, and Tailwind CSS.",
-    tech: ["React", "TypeScript", "Tailwind"],
+    title: "Personal Portfolio Website",
+    description: "This site. Designed and shipped with React and Node.js, deployed on Netlify.",
+    tech: ["React", "Node.js", "Netlify"],
     github: "https://github.com/1xavierdev/xavier-mckenzie",
-  },
-  {
-    title: "Algorithm Implementations",
-    description: "A growing collection of sorting, searching, and graph algorithms.",
-    tech: ["Java", "Python", "Algorithms"],
-    github: "https://github.com/1xavierdev",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-6 bg-secondary/40 border-y-2 border-ink">
+    <section id="projects" className="py-24 px-6">
       <div className="container mx-auto max-w-5xl">
-        <p className="kicker mb-3">04 — Projects</p>
+        <p className="kicker mb-3">05 / Projects</p>
         <h2 className="section-title mb-10">Things I've built</h2>
 
-        {/* Featured */}
         <div className="grid md:grid-cols-2 gap-6 mb-14">
           {featuredProjects.map((project) => (
             <div key={project.title} className="brut brut-hover flex flex-col overflow-hidden">
@@ -67,7 +56,7 @@ const ProjectsSection = () => {
                 </div>
               </div>
               <div className="p-5 flex flex-col flex-1">
-                <p className="font-mono text-xs text-accent mb-1">Featured</p>
+                <p className="font-mono text-xs text-accent mb-1">{project.status}</p>
                 <h3 className="font-display text-xl font-bold mb-3">{project.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -80,7 +69,6 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* Other */}
         <h3 className="font-display text-lg font-semibold mb-6">More projects</h3>
         <div className="grid md:grid-cols-3 gap-6">
           {otherProjects.map((project) => (
