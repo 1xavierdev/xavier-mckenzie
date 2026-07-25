@@ -8,7 +8,7 @@ const featuredProjects = [
     description:
       "An automated scanner that detects public S3 bucket misconfigurations and fires real-time SNS alerts. It's designed with auto-remediation behind dry-run guardrails to prevent unintended production changes, and deploys through modular, reusable Terraform.",
     tech: ["Python", "boto3", "AWS Lambda", "EventBridge", "SNS", "Terraform"],
-    github: "https://github.com/1xavierdev",
+    github: "https://github.com/1xavierdev/s3-anomaly-detector",
     live: "",
   },
   {
@@ -18,7 +18,7 @@ const featuredProjects = [
     description:
       "A Java desktop app for managing medication schedules, with a Binary Search Tree, queue, and linked list all implemented from scratch. Built with test-driven development to keep the data structures correct and reliable.",
     tech: ["Java", "Custom Data Structures", "TDD", "OOP"],
-    github: "https://github.com/1xavierdev",
+    github: "https://github.com/1xavierdev/medicine-reminder-system",
     live: "",
   },
 ];
